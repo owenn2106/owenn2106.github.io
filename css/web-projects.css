@@ -1,0 +1,179 @@
+.projects {
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.projects .container {
+  padding: 10em 0 10em 0;
+}
+
+.projects .title {
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+.projects h4,
+.projects h5 {
+  font-family: var(--font-nav-links);
+}
+
+.icastem-text h4,
+.eximia-text h4 {
+  color: var(--clr-red);
+}
+
+.icastem-img,
+.eximia-img {
+  transition: transform 500ms ease;
+}
+
+.icastem-img:hover,
+.eximia-img:hover {
+  transform: scale(1.1);
+}
+
+/* ICASTEM */
+
+.icastem-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: center;
+}
+
+.icastem-wrapper > *:nth-child(1) {
+  flex: 1 1 70%;
+  min-width: 25ch;
+}
+
+.icastem-wrapper > *:nth-child(2) {
+  flex: 1 1 30%;
+  min-width: 15ch;
+}
+
+.icastem-img img {
+  max-width: 90%;
+}
+
+@media screen and (max-width: 1020px) {
+  .icastem-wrapper {
+    flex-direction: column;
+  }
+
+  .icastem-img img {
+    max-width: 100%;
+  }
+}
+
+.icastem-text {
+  line-height: 2rem;
+}
+
+@media screen and (max-width: 1020px) {
+  .icastem-text {
+    padding-top: 2em;
+    text-align: center;
+  }
+}
+
+.icastem-text h4 {
+  padding-bottom: 0.5em;
+  font-size: 2.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.icastem-text h5,
+.icastem-text ul {
+  font-weight: 400;
+}
+
+.icastem-text ul {
+  padding-bottom: 1.5em;
+  list-style: square;
+}
+
+.website-btn {
+  text-decoration: none;
+  color: #eee;
+  background: var(--clr-red);
+  padding: 0.5em 1em;
+  border: 1px solid var(--clr-red);
+
+  transition: background 300ms ease;
+}
+
+.website-btn:hover {
+  color: black;
+  background: transparent;
+}
+
+/* EXIMIA */
+
+.eximia-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  padding-top: 5em;
+}
+
+.eximia-wrapper > *:nth-child(1) {
+  flex: 1 1 30%;
+  min-width: 15ch;
+
+  padding-left: 3.5em;
+}
+
+.eximia-wrapper > *:nth-child(2) {
+  flex: 1 1 70%;
+  min-width: 25ch;
+}
+
+.eximia-img img {
+  max-width: 90%;
+  float: right;
+}
+
+@media screen and (max-width: 1020px) {
+  .eximia-wrapper > *:nth-child(1) {
+    padding-left: 0;
+  }
+
+  .eximia-wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .eximia-img img {
+    max-width: 100%;
+  }
+}
+
+.eximia-text {
+  line-height: 2rem;
+}
+
+@media screen and (max-width: 1020px) {
+  .eximia-text {
+    padding-top: 2em;
+    text-align: center;
+  }
+}
+
+.eximia-text h4 {
+  padding-bottom: 0.5em;
+  font-size: 2.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.eximia-text h5,
+.eximia-text ul {
+  font-weight: 400;
+}
+
+.eximia-text ul {
+  padding-bottom: 1.5em;
+  list-style: square;
+}

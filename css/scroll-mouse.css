@@ -1,0 +1,59 @@
+.mouse {
+  width: 25px;
+  height: 40px;
+  border: 2px solid white;
+  border-radius: 30px;
+
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  animation: mouse 1s infinite alternate;
+}
+
+#scroll {
+  position: absolute;
+  left: 50%;
+  bottom: 3%;
+  transform: translateX(-50%);
+  color: white;
+  opacity: 0.5;
+  font-size: 0.8rem;
+}
+
+.mouse::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: 13px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #d94479;
+  border-radius: 50%;
+  animation: scroll 2s infinite;
+}
+
+@keyframes mouse {
+  from {
+    bottom: 8%;
+    opacity: 1;
+  }
+
+  to {
+    bottom: 6%;
+    opacity: 0.5;
+  }
+}
+
+@keyframes scroll {
+  from {
+    opacity: 1;
+    top: 13px;
+  }
+
+  to {
+    opacity: 0;
+    top: 20px;
+  }
+}

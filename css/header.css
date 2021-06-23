@@ -1,0 +1,103 @@
+@import url(var.css);
+
+.intro-page {
+  background: var(--clr-bg-dark);
+  width: 100%;
+}
+
+.intro-page .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+
+  padding-top: 10vh;
+}
+
+.big-text {
+  position: absolute;
+  top: 45%;
+  text-align: center;
+}
+
+.big-text h1 {
+  color: white;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 650px) {
+  .big-text h1 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .big-text h1 {
+    font-size: 3rem;
+  }
+}
+
+.big-text h5 {
+  text-transform: uppercase;
+  color: white;
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 500px) {
+  .big-text h5 {
+    font-size: 0.8rem;
+    padding-top: 1em;
+  }
+}
+
+.outer-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1em;
+}
+
+.outer-links li {
+  list-style: none;
+}
+
+.outer-links li a {
+  color: white;
+  position: relative;
+}
+
+.outer-links span {
+  padding: 0 1em;
+
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .outer-links a {
+    font-size: 0.8rem;
+  }
+
+  .outer-links span {
+    padding: 0 0.5em;
+  }
+}
+
+/* OUTER-LINKS ANIMATION AND DECORATION */
+
+.outer-links a::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background: white;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transform: scaleX(0);
+
+  transition: transform 500ms ease;
+}
+
+.outer-links li:hover a::after {
+  transform: scaleX(1);
+}

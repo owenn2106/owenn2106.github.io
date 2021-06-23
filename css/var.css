@@ -1,0 +1,9 @@
+:root {
+  --font-logo: "Bebas Neue", sans-serif;
+  --font-nav-links: "Abel", sans-serif;
+  --font-content: "Lato", sans-serif;
+
+  --clr-bg-dark: #252525;
+  --clr-bg-light: #eee;
+  --clr-red: #d94479;
+}

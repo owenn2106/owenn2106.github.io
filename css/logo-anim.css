@@ -1,0 +1,16 @@
+#logo-anim {
+  max-height: 15em;
+  position: absolute;
+}
+
+#logo-anim path {
+  stroke-dasharray: 2443.87;
+  stroke-dashoffset: 2443.87;
+  animation: line-anim 5s ease forwards;
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

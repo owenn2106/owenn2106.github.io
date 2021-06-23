@@ -1,0 +1,61 @@
+@import url(var.css);
+@import url(logo-anim.css);
+@import url(header.css);
+@import url(navbar.css);
+@import url(scroll-mouse.css);
+@import url(welcome-text.css);
+@import url(web-projects.css);
+@import url(skills.css);
+@import url(contact.css);
+@import url(about.css);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-content);
+}
+
+::selection {
+  background-color: bisque;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--clr-bg-light);
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h3 {
+  font-size: 4rem;
+}
+
+h4 {
+  font-size: 2.5rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+.container {
+  margin: 0 auto;
+  width: min(90%, 70.5rem);
+}
+
+.title {
+  font-family: var(--font-nav-links);
+}
+
+.title span {
+  color: var(--clr-red);
+}

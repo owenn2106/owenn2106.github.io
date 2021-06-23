@@ -1,0 +1,119 @@
+nav {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+
+  padding: 0 2em;
+}
+
+.burger {
+  z-index: 100;
+  cursor: pointer;
+
+  transition: transform 300ms ease;
+}
+
+.burger:hover {
+  transform: scale(1.05);
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+#resume-btn {
+  color: white;
+  padding: 0.5em 1em;
+
+  transition: all 300ms ease;
+}
+
+#resume-btn:hover {
+  transform: scale(1.05);
+  background: white;
+  color: black;
+}
+
+.nav-links {
+  display: none;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: var(--clr-bg-dark);
+  border: 10px solid white;
+
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+
+.nav-active {
+  transform: translateY(0%);
+  opacity: 1;
+  position: fixed;
+}
+
+.nav-links li {
+  opacity: 0;
+  margin: 2em 0;
+  list-style: none;
+}
+
+li,
+a {
+  text-decoration: none;
+}
+
+.nav-links li a {
+  color: white;
+  font-size: 2rem;
+
+  transition: all 300ms ease;
+}
+
+.nav-links li:hover a {
+  opacity: 0.5;
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+  background-color: white;
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+  background-color: white;
+}
